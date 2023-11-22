@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization</title>
+    <style>
+        .plot-container {
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot-container-second {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot-container-third {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot-container-fourth {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot-container-fifth {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot-container-seventh {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot-container-eighth {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot-container-ninth {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot-container-tenth {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .plot {
+            border: 2px solid #000;
+            width: 400px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Data Visualization</h2>
+
+<!-- Display the cleaned data -->
+{{ cleaned_data }}
+
+<!-- Display the Matplotlib plots side by side -->
+<div class="plot-container">
+    <div class="plot">
+        <img src="data:image/png;base64,{{ subscription }}" alt="Subscription Plot">
+    </div>
+    <div class="plot">
+        <img src="data:image/png;base64,{{ churn }}" alt="Churn Plot">
+    </div>
+    <div class="plot">
+        <img src="data:image/png;base64,{{ failed }}" alt="failed Plot">
+    </div>
+</div>
+
+<div class="plot-container-second">
+    <div class="">
+        <img src="data:image/png;base64,{{ operator_user }}" alt="operator_user Plot">
+    </div>
+    <div class="">
+        <img src="data:image/png;base64,{{ os }}" alt="os Plot">
+    </div>
+</div>
+
+<div class="plot-container-third">
+    <div class="">
+        <img src="data:image/png;base64,{{ rate }}" alt="rate Plot">
+    </div>
+</div>
+
+<div class="plot-container-fourth">
+
+    <div class="">
+        <img src="data:image/png;base64,{{ op_churn }}" alt="op_churn Plot">
+    </div>
+    <div class="">
+        <img src="data:image/png;base64,{{ subscription_duration }}" alt="subscription_duration Plot">
+    </div>
+</div>
+
+<div class="plot-container-fifth">
+
+    <div class="">
+        <img src="data:image/png;base64,{{ correlation }}" alt="correlation Plot">
+    </div>
+</div>
+
+<div class="plot-container-seventh">
+
+    <div class="">
+        <img src="data:image/png;base64,{{ os_churn }}" alt="os_churn Plot">
+    </div>
+    <div class="">
+        <img src="data:image/png;base64,{{ affiliates }}" alt="affiliates Plot">
+    </div>
+</div>
+
+<div class="plot-container-eighth">
+    <div class="">
+        <img src="data:image/png;base64,{{ sub_affiliates }}" alt="sub_affiliates Plot">
+    </div>
+    <div class="">
+        <img src="data:image/png;base64,{{ device }}" alt="device Plot">
+    </div>
+</div>
+
+<div class="plot-container-ninth">
+    <div class="">
+        <img src="data:image/png;base64,{{ op_service }}" alt="op_service Plot">
+    </div>
+    <div class="">
+        <img src="data:image/png;base64,{{ aggregator }}" alt="aggregator Plot">
+    </div>
+</div>
+
+<div class="plot-container-tenth">
+    <div class="">
+        <img src="data:image/png;base64,{{ daily_transaction }}" alt="daily_transaction Plot">
+    </div>
+</div>
+</body>
+</html>
