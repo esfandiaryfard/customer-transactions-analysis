@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import DataVisualizationView
 
+# Show it under the main url
 urlpatterns = [
-    path('eda/', DataVisualizationView.as_view(), name='data_visualization'),
+    path('', DataVisualizationView.as_view(), name='data_visualization'),
 ]
