@@ -1,0 +1,13 @@
+Analyzing the provided data can help us to see our current situation of the company. As we see churn rate is around 46%
+which in fact its a concerning number. Each user in AVG stay subscribed only 5 days. Considering that the percentage of
+failed transaction is 71%, we can say maybe one of the reasons of churn is that.
+
+Majority of our subscribed users are from operator C and Android users. Th rate of subscription for month 6 is higher
+than unsubscription.
+
+On the other hand majority of our churned users are the one using operator A, which can give us a clue about the service
+provided by this operator. Also from iphone 13,11 amd 10.
+
+Subscription has a correlation with os_version so maybe we can focus on most churned os versions.
+
+Affiliate 4 has more subscribed users. Majority of the users subscribed for ps service using operator c and andriod os,
